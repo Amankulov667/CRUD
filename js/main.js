@@ -318,9 +318,9 @@ modalForm7.addEventListener("submit", (event) => {
     setItemToStorage5(obj); //вот отправление
     readFunc3();
 
-    // inpModalWayNum.value = ""; //чтобы подефолту они были пустыми
-    // inpModalWayTitle.value = "";
-    // inpModalWayText.value = "";
+    inpModalWayNum.value = ""; //чтобы подефолту они были пустыми
+    inpModalWayTitle.value = "";
+    inpModalWayText.value = "";
 
     modalDiv5.style.display = "none"; //закрытие модального ока после преобразовывания
   }
