@@ -1173,3 +1173,204 @@ footer {
   color: white;
   border: 0;
 }
+
+.btn-closerSpr {
+  height: 30%;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: blue;
+  color: white;
+  border: 0;
+}
+
+.btn-closerSp {
+  height: 30%;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: blue;
+  color: white;
+  border: 0;
+}
+
+.main-modalSp {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.inner-modalSp {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 10% 35%;
+  text-align: center;
+}
+
+.inpSpName {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inpSpPhone {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-saveSp {
+  width: 10%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-saveSp:active {
+  background-color: rgb(9, 9, 205);
+}
+
+.closeSp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: #ff2b58;
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 49%;
+  top: 45%;
+  width: 50px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #ff2b58;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(-45deg);
+  }
+  40% {
+    transform: scale(1.5) rotate(-45deg);
+  }
+}
+
+.main-modalSpr {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+.inner-modalSpr {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 10% 35%;
+  text-align: center;
+}
+
+.inpSpNamer {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inpSpPhoner {
+  width: 50%;
+  height: 10%;
+  margin-left: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-saveSpr {
+  width: 10%;
+  height: 12%;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-saveSpr:active {
+  background-color: rgb(9, 9, 205);
+}
+
+.closeSpr {
+  display: flex;
+  justify-content: space-between;
+}
