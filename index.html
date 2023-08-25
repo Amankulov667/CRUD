@@ -1,3 +1,4 @@
+<!-- Я сделал модалку для кнопки записаться, это чисто от себя -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -411,7 +412,36 @@
         </div>
       </section>
     </div>
+
     <section class="container result">
+      <div class="main-modalSp">
+        <div class="inner-modalSp">
+          <div class="closeSp">
+            <img src="./images/logo.svg" alt="" class="modalImg" />
+            <button class="btn-closerSp">X</button>
+          </div>
+          <h3>Заполните форму</h3>
+          <form id="modalFormSp">
+            <input type="text" class="inpSpName" placeholder="Имя/Фамилия" />
+            <input
+              type="text"
+              class="inpSpPhone"
+              placeholder="Номер телефона"
+            />
+            <button class="btn-saveSp">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-modalSpr">
+        <div class="inner-modalSpr">
+          <div class="closeSpr">
+            <img src="./images/logo.svg" alt="" class="modalImg" />
+            <button class="btn-closerSpr">X</button>
+          </div>
+          <h3>Спасибо вам</h3>
+          <div class="heart"></div>
+        </div>
+      </div>
       <div class="result-title">
         <div class="left">
           <h3>Доводим до результата</h3>
@@ -426,7 +456,7 @@
             Выпускники Makers не сталкиваются с такой проблемой. Мы будем <br />
             доводить всех выпускников до результата
           </p>
-          <button>Записаться</button>
+          <button class="pr">Записаться</button>
         </div>
 
         <div class="result-card">
