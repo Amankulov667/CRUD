@@ -1,3 +1,5 @@
+//В конце, я сделал Модалку для кнопки записаться, посмотрите пожалуйста
+
 let inpModalName = document.querySelector(".inp-edit-name");
 let inpModalJob = document.querySelector(".inp-edit-job");
 let inpModalImg = document.querySelector(".inp-edit-img");
@@ -429,4 +431,60 @@ btnModalSave6.addEventListener("click", (event) => {
     readFunc3();
     modalDiv6.style.display = "none";
   }
+});
+
+//Create extra Чекните
+let inpModalNameR = document.querySelector(".inpSpName");
+let inpModalPhoneR = document.querySelector(".inpSpPhone");
+let btnModalSaveR = document.querySelector(".btn-saveSp");
+let buttR = document.querySelector(".pr");
+let modalDivSp = document.querySelector(".main-modalSp");
+let modalDivSpr = document.querySelector(".main-modalSpr");
+let btnCloseSp = document.querySelector(".btn-closerSp");
+let btnCloseSpr = document.querySelector(".btn-closerSpr");
+let modalFormSp = document.querySelector("#modalFormSp");
+
+buttR.addEventListener("click", () => {
+  // навесили событие на иконку добавления выпускника
+  modalDivSp.style.display = "block"; // при нажатии display модального окна меняется с none на block
+});
+modalFormSp.addEventListener("submit", (event) => {
+  // Кнопка сохраняет данные и отправляет и отправляет их в local storage
+  event.preventDefault(); // Это нужно, чтобы страница не обновлялась при нажатии на кнопку
+  if (!inpModalNameR.value.trim() || !inpModalPhoneR.value.trim()) {
+    // Это идет проверка, на заполнении инпутов
+    alert("Заполните все данные");
+  } else {
+    let obj = {
+      num: inpModalNameR.value,
+      phone: inpModalPhoneR.value,
+    }; // добавляет объект со значениями введенными в инпуты
+
+    function setItemToStorage5(c) {
+      // создаем функцию отправки значений на localStorage
+      let data = JSON.parse(localStorage.getItem("Reg")) || []; // мы берем данные с localStorage в виде массива
+      data.push(c); // Пушим эти данные в наш объект
+      localStorage.setItem("Reg", JSON.stringify(data)); // мы отправляем введенные данные обратно в localStorage, преобразовывая их
+    }
+    setItemToStorage5(obj); //вот отправление
+
+    inpModalNameR.value = ""; //чтобы подефолту они были пустыми
+    inpModalPhoneR.value = "";
+
+    modalDivSp.style.display = "none"; //закрытие модального ока после преобразовывания
+  }
+});
+
+btnCloseSp.addEventListener("click", () => {
+  modalDivSp.style.display = "none"; // Чтобы закрыть модалку
+});
+
+btnModalSaveR.addEventListener("click", () => {
+  if (inpModalNameR.value && inpModalPhoneR.value) {
+    modalDivSpr.style.display = "block";
+  }
+});
+
+btnCloseSpr.addEventListener("click", () => {
+  modalDivSpr.style.display = "none"; // Чтобы закрыть модалку
 });
